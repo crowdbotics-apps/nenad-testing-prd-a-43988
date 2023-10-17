@@ -1,3 +1,5 @@
+import { Slider } from "react-native-elements";
+import { CheckBox } from "react-native-elements";
 import React from "react";
 import { View, Image, Text, ScrollView, SafeAreaView, StyleSheet } from "react-native";
 
@@ -13,7 +15,16 @@ const WelcomeScreen = () => {
         </View>
         <Text style={styles.footer}>Made with ❤️ by Crowdbotics</Text>
       </ScrollView>
-    </SafeAreaView>;
+    <CheckBox style={styles.JbZIwaVf} title="Checkbox Title"></CheckBox><Slider thumbStyle={{
+      height: 20,
+      width: 20
+    }} thumbTintColor="#0000FF" maximumValue={1} minimumValue={0} style={styles.GalFGMuS}></Slider><Slider thumbStyle={{
+      height: 20,
+      width: 20
+    }} thumbTintColor="#0000FF" maximumValue={1} minimumValue={0} style={styles.EduvMXKR}></Slider><Slider style={styles.LwbbsfbR} thumbStyle={{
+      height: 20,
+      width: 20
+    }} thumbTintColor="#0000FF" maximumValue={1} minimumValue={0}></Slider></SafeAreaView>;
 };
 
 const styles = StyleSheet.create({
@@ -49,6 +60,24 @@ const styles = StyleSheet.create({
     color: "#828AB0",
     fontWeight: 700,
     marginBottom: 20
+  },
+  JbZIwaVf: {
+    width: 183,
+    height: 69
+  },
+  GalFGMuS: {
+    position: "absolute",
+    width: 150,
+    height: 40
+  },
+  EduvMXKR: {
+    position: "absolute",
+    width: 150,
+    height: 40
+  },
+  LwbbsfbR: {
+    width: 150,
+    height: 40
   }
 });
 export default WelcomeScreen;
